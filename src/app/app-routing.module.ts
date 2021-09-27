@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from 'src/pages/login/login.component';
+import { MainComponent } from 'src/pages/main/main.component';
+import { NoteComponent } from 'src/pages/note/note.component';
+import { RegisterComponent } from 'src/pages/register/register.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    component: LoginComponent
+  },
+  {
+    path: 'registro',
+    component: RegisterComponent
+  },
+  {
+    path: 'main',
+    component: MainComponent
+  },
+  {
+    path: 'notas',
+    component: NoteComponent
   }
 ];
 @NgModule({
@@ -13,4 +29,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
