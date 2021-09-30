@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
-
+import { Component } from "@angular/core";
 @Component({
-  selector: 'main', // <structure></structure>
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
-})
+    selector: 'main',
+    templateUrl: './main.component.html',
+    styleUrls: ['./main.component.css']
+}) 
 export class MainComponent {
-
+    public nombre: string = 'Julio';
 }

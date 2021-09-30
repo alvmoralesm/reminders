@@ -1,8 +1,7 @@
 {
-  "name": "Reminders",
+  "name": "Recordatorios",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular",
-  "id": "9689caec"
+  "type": "angular"
 }

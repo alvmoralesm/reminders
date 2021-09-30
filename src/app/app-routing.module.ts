@@ -15,7 +15,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'main',
+    path: 'principal',
     component: MainComponent
   },
   {
@@ -29,4 +29,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

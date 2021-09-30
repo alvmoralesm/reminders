@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'note', // <structure></structure>
-  templateUrl: './note.component.html',
-  styleUrls: ['./note.component.css']
+    selector: 'note',
+    templateUrl: './note.component.html',
+    styleUrls: ['./note.component.css']
 })
 export class NoteComponent {
-
+    
 }

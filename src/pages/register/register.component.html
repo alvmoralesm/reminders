@@ -1,0 +1,90 @@
+<ion-content>
+    <ion-grid class="completa">
+        <ion-row class="completa ion-align-items-center">
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">
+                            Formulario de registro
+                        </ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Ingrese su nombre {{usuario.nombre}}
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="usuario.nombre" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Ingrese su nombre apellido {{usuario.apellido}}
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="usuario.apellido" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Ingrese su nombre de usuario {{usuario.usuario}}
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="usuario.usuario" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Ingrese su contraseña {{usuario.contrasena}}
+                                        </ion-label>
+                                        <ion-input type="password" [(ngModel)]="usuario.contrasena" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            fecha de nacimiento {{usuario.fechaNacimiento}}
+                                        </ion-label>
+                                        <ion-datetime [(ngModel)]="usuario.fechaNacimiento"
+                                            displayFormat="DD/MM/YYYY"
+                                        >
+
+                                        </ion-datetime>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button expand="block" (click)="datosPorConsola()">
+                                        Registar
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col class="ion-text-center">
+                                    <ion-router-link
+                                        href=""
+                                    >
+                                        ¿Ya tienes cuenta?
+                                    </ion-router-link>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+       
+    </ion-grid>
+</ion-content>
